@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c39073df28.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title container">Comments</h1>
+    <div class="container">
+        
+        <div class="form-container">
+            <form class="form">
+                <div class="name-container box-input">
+                    <label for="form-name" class="form-name">Имя пользователя:</label>
+                    <input type="text" id="form-name" placeholder="Введите Ваше имя" class="input-name check" data-rule="name">
+                    <p class="msgError"></p>
+                </div>
+                <div class="text-container box-input">
+                    <label for="form-text" class="form-text">Комментарий:</label>
+                    <textarea id="form-text" class="form-textarea check" cols="30" rows="5" data-rule="comment" placeholder="Напишите Ваш комментарий"></textarea>
+                    <p class="msgError"></p>
+                </div>
+                <div class="date-container box-input">
+                    <label for="form-date" class="form-date">Дата:</label>
+                    <input type="datetime-local" id="form-date" placeholder="Введите дату" class="input-date" data-rule="date">
+                    <p class="msgError"></p>
+                </div>
+                <input type="submit" class="btn" value="Добавить комментарий">
+            </form>
+        </div>
+        <div class="comments-container">
+
+        </div>
+    </div>
+    <script src="script/validator.js"></script>
+    <script src="script/comment.js"></script>
+    <script src="script/convertDate.js"></script>
+</body>
+</html>
